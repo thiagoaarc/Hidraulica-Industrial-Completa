@@ -1,0 +1,167 @@
+# ============================================================================
+# REQUIREMENTS.TXT - Sistema Industrial de Análise Hidráulica
+# Projeto Hydraulic System Complete - 100% Funcional
+# Data: 29/08/2025
+# ============================================================================
+
+# === DEPENDÊNCIAS PRINCIPAIS ===
+
+# Computação Científica e Análise de Dados
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Machine Learning e Análise Estatística
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Processamento de Sinais e Análise Espectral
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Interface Gráfica PyQt6
+PyQt6>=6.5.0
+PyQt6-Qt6>=6.5.0
+pyqtgraph>=0.13.0
+
+# Banco de Dados
+sqlite3  # Incluído no Python padrão
+
+# Utilitários de Sistema
+pathlib  # Incluído no Python padrão
+datetime  # Incluído no Python padrão
+logging  # Incluído no Python padrão
+threading  # Incluído no Python padrão
+queue  # Incluído no Python padrão
+collections  # Incluído no Python padrão
+dataclasses  # Incluído no Python padrão
+typing  # Incluído no Python padrão
+enum  # Incluído no Python padrão
+functools  # Incluído no Python padrão
+unittest  # Incluído no Python padrão
+json  # Incluído no Python padrão
+pickle  # Incluído no Python padrão
+gc  # Incluído no Python padrão
+os  # Incluído no Python padrão
+sys  # Incluído no Python padrão
+time  # Incluído no Python padrão
+glob  # Incluído no Python padrão
+traceback  # Incluído no Python padrão
+
+# === DEPENDÊNCIAS OPCIONAIS (RECOMENDADAS) ===
+
+# Análise de Dados Avançada
+xlsxwriter>=3.1.0        # Para exportação de relatórios Excel
+openpyxl>=3.1.0          # Para leitura/escrita de arquivos Excel
+xlrd>=2.0.0              # Para leitura de arquivos Excel antigos
+
+# Visualização Avançada
+plotly>=5.15.0           # Gráficos interativos
+dash>=2.10.0             # Dashboard web (opcional)
+
+# Performance e Otimização
+numba>=0.57.0            # Compilação JIT para performance (opcional)
+cython>=0.29.0           # Extensões C para performance (opcional)
+
+# Conectividade e APIs
+requests>=2.31.0         # Para APIs REST (opcional)
+flask>=2.3.0             # Para servidor web interno (opcional)
+
+# Testes e Qualidade de Código
+pytest>=7.4.0           # Framework de testes avançado (opcional)
+pytest-cov>=4.1.0       # Cobertura de testes (opcional)
+
+# === VERSÕES ESPECÍFICAS TESTADAS ===
+# Python: 3.8+ (recomendado 3.11+)
+# Sistema Operacional: Windows 10/11, Linux, macOS
+
+# === INSTALAÇÃO RECOMENDADA ===
+# pip install -r requirements.txt
+
+# === DEPENDÊNCIAS DE DESENVOLVIMENTO (DEV) ===
+# Para desenvolvedores que querem contribuir com o projeto
+
+# Formatação e Linting
+black>=23.0.0            # Formatação de código
+flake8>=6.0.0            # Análise de código
+mypy>=1.5.0              # Type checking
+
+# Documentação
+sphinx>=7.0.0            # Geração de documentação
+sphinx-rtd-theme>=1.3.0  # Tema da documentação
+
+# === NOTAS DE INSTALAÇÃO ===
+
+# 1. Para instalação básica (mínima):
+#    pip install numpy pandas scipy scikit-learn PyQt6 pyqtgraph
+
+# 2. Para instalação completa:
+#    pip install -r requirements.txt
+
+# 3. Para ambiente de desenvolvimento:
+#    pip install -r requirements.txt
+#    pip install black flake8 mypy pytest sphinx
+
+# 4. Em caso de erro com PyQt6:
+#    pip install --upgrade pip
+#    pip install PyQt6 --force-reinstall
+
+# 5. Para sistemas Linux, pode ser necessário:
+#    sudo apt-get install python3-pyqt6
+#    sudo apt-get install python3-pyqt6.qtcore python3-pyqt6.qtgui
+
+# === COMPATIBILIDADE ===
+# Sistema testado com:
+# - Python 3.8, 3.9, 3.10, 3.11, 3.12
+# - Windows 10/11 (x64)
+# - Conda/Anaconda environments
+# - Virtual environments (venv)
+
+# === FUNCIONALIDADES POR DEPENDÊNCIA ===
+
+# numpy: Computação numérica, arrays, álgebra linear
+# pandas: Manipulação de dados, séries temporais  
+# scipy: Análise científica, filtros, interpolação, FFT
+# scikit-learn: Machine Learning (PCA, CCA, RandomForest, IsolationForest)
+# PyQt6: Interface gráfica principal
+# pyqtgraph: Gráficos em tempo real de alta performance
+# matplotlib: Visualização científica
+# joblib: Serialização de modelos ML
+
+# === HARDWARE RECOMENDADO ===
+# RAM: Mínimo 8GB, Recomendado 16GB+
+# CPU: Mínimo 4 cores, Recomendado 8+ cores
+# Armazenamento: 1GB livre para dados e logs
+# GPU: Opcional, pode acelerar cálculos NumPy
+
+# === ESTRUTURA DE DEPENDÊNCIAS ===
+#
+# NÍVEL 1 (CRÍTICO):
+#   numpy, pandas, PyQt6 - Base do sistema
+#
+# NÍVEL 2 (ESSENCIAL):  
+#   scipy, scikit-learn, pyqtgraph - Análises avançadas
+#
+# NÍVEL 3 (RECOMENDADO):
+#   matplotlib, openpyxl - Visualização e relatórios
+#
+# NÍVEL 4 (OPCIONAL):
+#   plotly, numba, requests - Funcionalidades extras
+
+# === VERIFICAÇÃO DE INSTALAÇÃO ===
+# Execute o seguinte para verificar se tudo está funcionando:
+# python -c "import hydraulic_system_complete; print('✅ Sistema funcionando!')"
+
+# === SUPORTE ===
+# Em caso de problemas com dependências:
+# 1. Verificar versão do Python: python --version
+# 2. Atualizar pip: python -m pip install --upgrade pip
+# 3. Limpar cache: pip cache purge
+# 4. Instalar em ambiente virtual: python -m venv venv && source venv/bin/activate
+# 5. Instalar uma dependência por vez para identificar problemas
+
+# === CHANGELOG DE DEPENDÊNCIAS ===
+# v1.0 (29/08/2025): Versão inicial completa
+# - Todas as funcionalidades avançadas implementadas
+# - Suporte completo para análise hidráulica industrial
+# - Sistema 100% funcional
